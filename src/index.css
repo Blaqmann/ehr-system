@@ -1,0 +1,42 @@
+/* src/index.css */
+@import "react-toastify/dist/ReactToastify.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-paginate {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.react-paginate li {
+  margin: 0 0.5rem;
+}
+
+.react-paginate a {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.react-paginate a:hover {
+  background-color: #e5e7eb;
+}
+
+.react-paginate .active a {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.react-paginate .disabled a {
+  color: #d1d5db;
+  cursor: not-allowed;
+}
